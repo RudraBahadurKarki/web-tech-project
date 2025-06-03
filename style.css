@@ -1,0 +1,170 @@
+/* ========== Global Page Styling ========== */
+body {
+    /* Use a clean, modern font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Light background for the full screen */
+    background-color: #f0f4f8;
+
+    /* Remove default margin and center content */
+    margin: 0;
+    padding: 0;
+
+    /* Center content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* ========== Main Container for Forms and Dashboard ========== */
+.form-container, .dashboard-container {
+    /* White card-style background */
+    background: #ffffff;
+
+    /* Padding inside the container */
+    padding: 30px;
+
+    /* Rounded corners */
+    border-radius: 15px;
+
+    /* Soft shadow for depth */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    /* Responsive width */
+    width: 100%;
+    max-width: 400px;
+
+    /* Center text inside */
+    text-align: center;
+
+    /* Apply entrance animation */
+    animation: slideIn 0.6s ease;
+}
+
+/* ========== Input Fields ========== */
+input {
+    /* Full width input */
+    width: 100%;
+
+    /* Padding for better spacing */
+    padding: 12px;
+
+    /* Space around inputs */
+    margin: 10px 0;
+
+    /* Light border and rounded edges */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    /* Slightly larger text */
+    font-size: 14px;
+}
+
+/* ========== Buttons ========== */
+button {
+    /* Padding inside button */
+    padding: 12px;
+
+    /* Make buttons fit side-by-side */
+    width: 48%;
+    margin: 10px 1%;
+
+    /* Remove default border and round edges */
+    border: none;
+    border-radius: 8px;
+
+    /* Beautiful gradient background */
+    background: linear-gradient(to right, #667eea, #764ba2);
+
+    /* Text styling */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* Smooth transition for hover effect */
+    transition: 0.3s;
+}
+
+/* ========== Button Hover Effect ========== */
+button:hover {
+    /* Slightly scale up on hover */
+    transform: scale(1.05);
+
+    /* Reverse gradient for hover */
+    background: linear-gradient(to right, #764ba2, #667eea);
+}
+
+/* ========== Hyperlinks (e.g., login/register links) ========== */
+a {
+    display: inline-block;
+    margin-top: 15px;
+
+    /* Soft blue color for links */
+    color: #4a90e2;
+
+    /* Remove underline by default */
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+/* Add underline when hovered */
+a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Error/Success Message Style ========== */
+.message {
+    margin-top: 10px;
+
+    /* Red color for error or alerts */
+    color: #d9534f;
+
+    font-weight: bold;
+}
+
+/* ========== Logout Button ========== */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+
+    /* Red background for logout */
+    background-color: #ff4d4f;
+
+    color: white;
+
+    /* Rounded button */
+    border-radius: 8px;
+
+    /* Margin above button */
+    margin-top: 20px;
+
+    /* No underline and bold text */
+    text-decoration: none;
+    font-weight: bold;
+
+    /* Transition effect on hover */
+    transition: 0.3s;
+}
+
+/* ========== Hover Effect for Logout Button ========== */
+.logout-btn:hover {
+    /* Darker red on hover */
+    background-color: #c0392b;
+
+    /* Slight zoom-in */
+    transform: scale(1.05);
+}
+
+/* ========== Animation: Slide In From Top ========== */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
